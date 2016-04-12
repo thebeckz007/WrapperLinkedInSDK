@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FC1211F1CBC6A7200CBD280 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC1211E1CBC6A7200CBD280 /* main.m */; };
+		2FC121221CBC6A7200CBD280 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC121211CBC6A7200CBD280 /* AppDelegate.m */; };
+		2FC121251CBC6A7200CBD280 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC121241CBC6A7200CBD280 /* ViewController.m */; };
+		2FC121281CBC6A7200CBD280 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC121261CBC6A7200CBD280 /* Main.storyboard */; };
+		2FC1212A1CBC6A7200CBD280 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FC121291CBC6A7200CBD280 /* Assets.xcassets */; };
+		2FC1212D1CBC6A7200CBD280 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC1212B1CBC6A7200CBD280 /* LaunchScreen.storyboard */; };
+		2FC1213D1CBC6B5100CBD280 /* linkedin-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC121351CBC6B5100CBD280 /* linkedin-sdk.framework */; };
+		2FC1213E1CBC6B5100CBD280 /* LinkedInManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC121381CBC6B5100CBD280 /* LinkedInManager.m */; };
+		2FC1213F1CBC6B5100CBD280 /* LinkedInProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC1213A1CBC6B5100CBD280 /* LinkedInProfile.m */; };
+		2FC121401CBC6B5100CBD280 /* LinkedInTokenObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC1213C1CBC6B5100CBD280 /* LinkedInTokenObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2FC1211A1CBC6A7100CBD280 /* DemoWrapperLinkedInSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoWrapperLinkedInSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FC1211E1CBC6A7200CBD280 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2FC121201CBC6A7200CBD280 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2FC121211CBC6A7200CBD280 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2FC121231CBC6A7200CBD280 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2FC121241CBC6A7200CBD280 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2FC121271CBC6A7200CBD280 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FC121291CBC6A7200CBD280 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FC1212C1CBC6A7200CBD280 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2FC1212E1CBC6A7200CBD280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FC121351CBC6B5100CBD280 /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "linkedin-sdk.framework"; sourceTree = "<group>"; };
+		2FC121361CBC6B5100CBD280 /* LinkedInHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedInHeader.h; sourceTree = "<group>"; };
+		2FC121371CBC6B5100CBD280 /* LinkedInManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedInManager.h; sourceTree = "<group>"; };
+		2FC121381CBC6B5100CBD280 /* LinkedInManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedInManager.m; sourceTree = "<group>"; };
+		2FC121391CBC6B5100CBD280 /* LinkedInProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedInProfile.h; sourceTree = "<group>"; };
+		2FC1213A1CBC6B5100CBD280 /* LinkedInProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedInProfile.m; sourceTree = "<group>"; };
+		2FC1213B1CBC6B5100CBD280 /* LinkedInTokenObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedInTokenObject.h; sourceTree = "<group>"; };
+		2FC1213C1CBC6B5100CBD280 /* LinkedInTokenObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedInTokenObject.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FC121171CBC6A7100CBD280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FC1213D1CBC6B5100CBD280 /* linkedin-sdk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FC121111CBC6A7100CBD280 = {
+			isa = PBXGroup;
+			children = (
+				2FC1211C1CBC6A7200CBD280 /* DemoWrapperLinkedInSDK */,
+				2FC1211B1CBC6A7100CBD280 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2FC1211B1CBC6A7100CBD280 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FC1211A1CBC6A7100CBD280 /* DemoWrapperLinkedInSDK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FC1211C1CBC6A7200CBD280 /* DemoWrapperLinkedInSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2FC121341CBC6B5100CBD280 /* WrapperLinkedInSDK */,
+				2FC121201CBC6A7200CBD280 /* AppDelegate.h */,
+				2FC121211CBC6A7200CBD280 /* AppDelegate.m */,
+				2FC121231CBC6A7200CBD280 /* ViewController.h */,
+				2FC121241CBC6A7200CBD280 /* ViewController.m */,
+				2FC121261CBC6A7200CBD280 /* Main.storyboard */,
+				2FC121291CBC6A7200CBD280 /* Assets.xcassets */,
+				2FC1212B1CBC6A7200CBD280 /* LaunchScreen.storyboard */,
+				2FC1212E1CBC6A7200CBD280 /* Info.plist */,
+				2FC1211D1CBC6A7200CBD280 /* Supporting Files */,
+			);
+			path = DemoWrapperLinkedInSDK;
+			sourceTree = "<group>";
+		};
+		2FC1211D1CBC6A7200CBD280 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FC1211E1CBC6A7200CBD280 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FC121341CBC6B5100CBD280 /* WrapperLinkedInSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2FC121351CBC6B5100CBD280 /* linkedin-sdk.framework */,
+				2FC121361CBC6B5100CBD280 /* LinkedInHeader.h */,
+				2FC121371CBC6B5100CBD280 /* LinkedInManager.h */,
+				2FC121381CBC6B5100CBD280 /* LinkedInManager.m */,
+				2FC121391CBC6B5100CBD280 /* LinkedInProfile.h */,
+				2FC1213A1CBC6B5100CBD280 /* LinkedInProfile.m */,
+				2FC1213B1CBC6B5100CBD280 /* LinkedInTokenObject.h */,
+				2FC1213C1CBC6B5100CBD280 /* LinkedInTokenObject.m */,
+			);
+			path = WrapperLinkedInSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FC121191CBC6A7100CBD280 /* DemoWrapperLinkedInSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FC121311CBC6A7200CBD280 /* Build configuration list for PBXNativeTarget "DemoWrapperLinkedInSDK" */;
+			buildPhases = (
+				2FC121161CBC6A7100CBD280 /* Sources */,
+				2FC121171CBC6A7100CBD280 /* Frameworks */,
+				2FC121181CBC6A7100CBD280 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoWrapperLinkedInSDK;
+			productName = DemoWrapperLinkedInSDK;
+			productReference = 2FC1211A1CBC6A7100CBD280 /* DemoWrapperLinkedInSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FC121121CBC6A7100CBD280 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Thebeckz007;
+				TargetAttributes = {
+					2FC121191CBC6A7100CBD280 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 2FC121151CBC6A7100CBD280 /* Build configuration list for PBXProject "DemoWrapperLinkedInSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FC121111CBC6A7100CBD280;
+			productRefGroup = 2FC1211B1CBC6A7100CBD280 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FC121191CBC6A7100CBD280 /* DemoWrapperLinkedInSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FC121181CBC6A7100CBD280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FC1212D1CBC6A7200CBD280 /* LaunchScreen.storyboard in Resources */,
+				2FC1212A1CBC6A7200CBD280 /* Assets.xcassets in Resources */,
+				2FC121281CBC6A7200CBD280 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FC121161CBC6A7100CBD280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FC121251CBC6A7200CBD280 /* ViewController.m in Sources */,
+				2FC1213F1CBC6B5100CBD280 /* LinkedInProfile.m in Sources */,
+				2FC1213E1CBC6B5100CBD280 /* LinkedInManager.m in Sources */,
+				2FC121221CBC6A7200CBD280 /* AppDelegate.m in Sources */,
+				2FC121401CBC6B5100CBD280 /* LinkedInTokenObject.m in Sources */,
+				2FC1211F1CBC6A7200CBD280 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2FC121261CBC6A7200CBD280 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FC121271CBC6A7200CBD280 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2FC1212B1CBC6A7200CBD280 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FC1212C1CBC6A7200CBD280 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FC1212F1CBC6A7200CBD280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2FC121301CBC6A7200CBD280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FC121321CBC6A7200CBD280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DemoWrapperLinkedInSDK/WrapperLinkedInSDK",
+				);
+				INFOPLIST_FILE = DemoWrapperLinkedInSDK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Thebeckz007.DemoWrapperLinkedInSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2FC121331CBC6A7200CBD280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DemoWrapperLinkedInSDK/WrapperLinkedInSDK",
+				);
+				INFOPLIST_FILE = DemoWrapperLinkedInSDK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Thebeckz007.DemoWrapperLinkedInSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FC121151CBC6A7100CBD280 /* Build configuration list for PBXProject "DemoWrapperLinkedInSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FC1212F1CBC6A7200CBD280 /* Debug */,
+				2FC121301CBC6A7200CBD280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FC121311CBC6A7200CBD280 /* Build configuration list for PBXNativeTarget "DemoWrapperLinkedInSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FC121321CBC6A7200CBD280 /* Debug */,
+				2FC121331CBC6A7200CBD280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FC121121CBC6A7100CBD280 /* Project object */;
+}
