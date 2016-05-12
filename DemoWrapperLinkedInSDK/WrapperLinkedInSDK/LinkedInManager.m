@@ -69,27 +69,35 @@ NSString *const api_Get_Basic_Profile = @"https://api.linkedin.com/v1/people/~";
     NSString *formatData = dataFormatJson;
     NSString *url = [NSString stringWithFormat:@"%@%@", api_Get_Full_Profile, formatData];
     
+    __block GetInfoUserLinkedInHandler finishBlock = ^(LinkedInProfile *profile, LinkedInTokenObject *token, NSError *error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (completeBlock) {
+                completeBlock(profile, token, error);
+            }
+        });
+    };
+    
     __weak typeof(self) weakSelf = self;
     if ([LISDKSessionManager hasValidSession]) {
         [[LISDKAPIHelper sharedInstance] getRequest:url
                                             success:^(LISDKAPIResponse *response) {
                                                 // do something with response
-                                                if (completeBlock) {
+                                                if (finishBlock) {
                                                     NSData* data = [response.data dataUsingEncoding:NSUTF8StringEncoding];
                                                     if (data) {
                                                         NSDictionary *dictResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
                                                         LinkedInProfile *profile = [LinkedInProfile linkedInProfileFromDictionary:dictResponse];
-                                                        completeBlock(profile, [LinkedInTokenObject linkedInTokenObjectFromLISDKToken:_linkedSession.accessToken], nil);
+                                                        finishBlock(profile, [LinkedInTokenObject linkedInTokenObjectFromLISDKToken:_linkedSession.accessToken], nil);
                                                     } else {
                                                         // data is null, so it's failed
-                                                        completeBlock(nil, nil, [weakSelf genarateErrorWithCode:LinkedInSignInFailed]);
+                                                        finishBlock(nil, nil, [weakSelf genarateErrorWithCode:LinkedInSignInFailed]);
                                                     }
                                                 }
                                             }
                                               error:^(LISDKAPIError *apiError) {
                                                   // do something with error
-                                                  if (apiError && completeBlock && weakSelf) {
-                                                      completeBlock(nil, nil, [weakSelf generateErrorFromLISDKAPIError:apiError]);
+                                                  if (apiError && finishBlock && weakSelf) {
+                                                      finishBlock(nil, nil, [weakSelf generateErrorFromLISDKAPIError:apiError]);
                                                   }
                                               }];
     } else if (weakSelf) {
@@ -98,8 +106,8 @@ NSString *const api_Get_Basic_Profile = @"https://api.linkedin.com/v1/people/~";
         [weakSelf createSessionWithAuth:permissions state:nil showGoToAppStoreDialog:YES completeBlock:^(NSString *returnState, NSError *error) {
             if (error) {
                 // it's failed
-                if (completeBlock) {
-                    completeBlock(nil, nil, [weakSelf genarateErrorWithCode:LinkedInSignInFailed]);
+                if (finishBlock) {
+                    finishBlock(nil, nil, [weakSelf genarateErrorWithCode:LinkedInSignInFailed]);
                 }
             } else {
                 // created session successfully
@@ -109,8 +117,8 @@ NSString *const api_Get_Basic_Profile = @"https://api.linkedin.com/v1/people/~";
         }];
     } else {
         // it's failed
-        if (completeBlock) {
-            completeBlock(nil, nil, [weakSelf genarateErrorWithCode:LinkedInSignInFailed]);
+        if (finishBlock) {
+            finishBlock(nil, nil, [weakSelf genarateErrorWithCode:LinkedInSignInFailed]);
         }
     }
 }
